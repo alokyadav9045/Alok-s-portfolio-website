@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -10,14 +9,14 @@ $(document).ready(function () {
         $('.navbar').removeClass('nav-toggle');
 
         if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
+            $('#scroll-top').addClass('active');
         } else {
-            document.querySelector('#scroll-top').classList.remove('active');
+            $('#scroll-top').removeClass('active');
         }
 
         // scroll spy
         $('section').each(function () {
-            let height = $(this).height();
+            let height = $(this).outerHeight();
             let offset = $(this).offset().top - 200;
             let top = $(window).scrollTop();
             let id = $(this).attr('id');
@@ -34,14 +33,15 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+        }, 500, 'linear');
     });
 
-    // <!-- emailjs to mail contact form data -->
+    // emailjs to mail contact form data
     $("#contact-form").submit(function (event) {
+        event.preventDefault();
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm('contact_service', 'template_contact', this)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -50,41 +50,30 @@ $(document).ready(function () {
                 console.log('FAILED...', error);
                 alert("Form Submission Failed! Try Again");
             });
-        event.preventDefault();
     });
-    // <!-- emailjs to mail contact form data -->
-
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
-        }
-    });
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === "visible") {
+        document.title = "Portfolio | Jigar Sable";
+        $("#favicon").attr("href", "assets/images/favicon.png");
+    } else {
+        document.title = "Come Back To Portfolio";
+        $("#favicon").attr("href", "assets/images/favhand.png");
+    }
+});
 
-
-// <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
+// typed js effect starts
+new Typed(".typing-text", {
     strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 500,
 });
-// <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
-    let response
-    type === "skills" ?
-        response = await fetch("skills.json")
-        :
-        response = await fetch("./projects/projects.json")
+    let response = await fetch(type === "skills" ? "skills.json" : "./projects/projects.json");
     const data = await response.json();
     return data;
 }
@@ -99,7 +88,7 @@ function showSkills(skills) {
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
               </div>
-            </div>`
+            </div>`;
     });
     skillsContainer.innerHTML = skillHTML;
 }
@@ -123,17 +112,16 @@ function showProjects(projects) {
           </div>
         </div>
       </div>
-    </div>`
+    </div>`;
     });
     projectsContainer.innerHTML = projectHTML;
 
-    // <!-- tilt js effect starts -->
+    // tilt js effect
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
     });
-    // <!-- tilt js effect ends -->
 
-    /* ===== SCROLL REVEAL ANIMATION ===== */
+    // scroll reveal animation
     const srtop = ScrollReveal({
         origin: 'top',
         distance: '80px',
@@ -141,9 +129,7 @@ function showProjects(projects) {
         reset: true
     });
 
-    /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
-
 }
 
 fetchData().then(data => {
@@ -154,22 +140,10 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-// <!-- tilt js effect starts -->
+// tilt js effect
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
-// <!-- tilt js effect ends -->
-
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
 
 // disable developer mode
 document.onkeydown = function (e) {
@@ -188,7 +162,7 @@ document.onkeydown = function (e) {
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
     }
-}
+};
 
 // Start of Tawk.to Live Chat
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -200,10 +174,8 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
 })();
-// End of Tawk.to Live Chat
 
-
-/* ===== SCROLL REVEAL ANIMATION ===== */
+// scroll reveal animation
 const srtop = ScrollReveal({
     origin: 'top',
     distance: '80px',
@@ -230,7 +202,6 @@ srtop.reveal('.about .content .tag', { delay: 200 });
 srtop.reveal('.about .content p', { delay: 200 });
 srtop.reveal('.about .content .box-container', { delay: 200 });
 srtop.reveal('.about .content .resumebtn', { delay: 200 });
-
 
 /* SCROLL SKILLS */
 srtop.reveal('.skills .container', { interval: 200 });
