@@ -2,7 +2,7 @@
   {
     "name": "Course web",
     "desc": "Basic website template built using HTML ,Css, Bootstrap,and javascript.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/course",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/course",
     "category": "basicweb",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -12,7 +12,7 @@
   {
     "name": "Netflix clone ",
     "desc": "this is clone of the netflix , this is totally built with Html ,css and Javascript",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/netflix",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/netflix",
     "category": "basicweb",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -22,7 +22,7 @@
   {
     "name": "currency converter",
     "desc": "The Currency Converter project is a software application designed to facilitate the real-time conversion of currencies. ",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/convertor",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/convertor",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -32,7 +32,7 @@
   {
     "name": "Digital clock",
     "desc": "This project involves creating a simple digital clock using Python and the Tkinter library for the graphical user interface (GUI).",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/digital clock",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/digital clock",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -42,7 +42,7 @@
   {
     "name": "calculator",
     "desc": " This project involves creating a graphical user interface (GUI) calculator using Python. The calculator is designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/calculator",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/calculator",
     "category": "web app",
     "links": {
       "view": "https://instagramernstack.herokuapp.com/",
@@ -52,7 +52,7 @@
   {
     "name": "Snake game ",
     "desc": "The Snake Game project is a classic arcade game implemented in Python. In this game, the player controls a snake that moves around the screen, eating food to grow longer while avoiding collisions with the walls and its own tail.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/snakegame",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/snakegame",
     "category": "mern",
     "links": {
       "view": "https://flipkartwebs.herokuapp.com/",
@@ -62,7 +62,7 @@
   {
     "name": "Slide showviewer app",
     "desc": "The Slideshow Viewer App is a Python-based application designed to facilitate the seamless display of a series of images in a slideshow format. Utilizing libraries such as Tkinter for the graphical user interface.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/slideshow",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/slideshow",
     "category": "mern",
     "links": {
       "view": "https://resumegenx.netlify.app/",
@@ -72,7 +72,7 @@
   {
     "name": "Spotify clone",
     "desc": "The Spotify Clone project is a comprehensive web application designed to replicate the core functionalities of Spotify, the popular music streaming service. ",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/spotify",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/spotify",
     "category": "mern",
     "links": {
       "view": "https://reactjsprojects.herokuapp.com/",
@@ -82,7 +82,7 @@
   {
     "name": "Portfolio template",
     "desc": "This Project Portfolio Template is a comprehensive, customizable tool designed to help individuals and organizations effectively manage and showcase their project work.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/portfolio temp",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/portfolio temp",
     "category": "lamp",
     "links": {
       "view": "https://github.com/jigar-sable/Flipkart-Clone-PHP",
@@ -93,7 +93,7 @@
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/portfolio",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/portfolio",
     "category": "basicweb",
     "links": {
       "view": "#",
@@ -103,7 +103,7 @@
   {
     "name": "Indian Temples",
     "desc": "It shows temples of different sectors of India. as user clicks it will redirect to wiki of that temple for info.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/templeweb",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/templeweb",
     "category": "basicweb",
     "links": {
       "view": "#",
@@ -113,7 +113,7 @@
   {
     "name": "Indian Temples",
     "desc": "It shows temples of different sectors of India. as user clicks it will redirect to wiki of that temple for info.",
-    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/assets/images/projects/templeweb",
+    "image": "https://github.com/alokyadav9045/Alok-s-portfolio-website/main/assets/images/projects/templeweb",
     "category": "basicweb",
     "links": {
       "view": "#",
